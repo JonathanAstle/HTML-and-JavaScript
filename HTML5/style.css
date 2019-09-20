@@ -1,0 +1,17 @@
+body {
+  color: orange;
+  background-color: lime;
+  text-align: center;
+}
+
+p {
+  color: blue;
+}
+
+.earlyLife {
+  font-size: 30px;
+}
+
+#section1 {
+  border: 5px solid magenta;
+}

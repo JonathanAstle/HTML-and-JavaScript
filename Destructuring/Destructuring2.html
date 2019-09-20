@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>Destructuring</title>
+    </head>
+
+    <body>
+        <script>
+            const account = {
+                id: 1,
+                name: 'Jon',
+                age: 20,
+                loc: 'Manchester'
+            };
+             
+            const { name: firstname, loc, degree = "Physics" } = account; //stores name from account as firstname and //stores degree as "Physics" if there is no degree value in account
+             
+            console.log(firstname + ' lives in ' + loc + " and has a degree in " + degree);
+
+        </script>
+    </body>
+</html>

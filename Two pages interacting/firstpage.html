@@ -1,0 +1,35 @@
+<html>
+<head>
+    <title>Two pages interacting</title>
+</head>
+<body>
+
+    <p>First page</p>
+    <!--<a href="secondpage.html">Click me for second page!</a>-->
+    <button onclick="handleClick()">Click me for second page!</button>
+    <!--<form action="secondpage.html"></form>-->
+    
+
+
+
+
+
+
+
+
+    <script>
+        function handleClick() {
+            localStorage.setItem("crap", "brown"); //sets to local storage
+            localStorage.removeItem("crap"); //removes item by key
+            localStorage.clear(); //clears all items in local storage
+
+            localStorage.setItem("crap", "brown")
+
+            document.cookie = "name=Chris";
+
+            location.href = "secondpage.html?name=Jon&age=22";
+        }
+    </script>
+
+</body>
+</html>

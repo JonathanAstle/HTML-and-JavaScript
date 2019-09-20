@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>Destructuring</title>
+    </head>
+
+    <body>
+        <script>
+            const account = {
+                id: 1,
+                name: 'Jon',
+                age: 22,
+                loc: 'Manchester'
+            };
+             
+            const { name, ...allTheRest} = account; //stores everything except name as allTheRest
+             
+            console.log(name + " and all the rest ", allTheRest);
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>Destructuring Arrays</title>
+    </head>
+
+    <body>
+        <script>
+            const people = [
+                "Jon", 
+                "David",
+                "Liam",
+                "John",
+                "Jacob"
+            ]
+             
+            const [firstName, secondName] = people; //stores first element of people as "firstName" and same for secondName
+            console.log(firstName + " and " + secondName);
+
+            const [first, ,third] = people //to skip elements add extra comments
+            console.log(first + " and " + third)
+  
+            const [one, two, ...rest] = people //stores first two elements then stores the rest in an array
+            console.log(one + ", " + two + " and the rest: " + rest)
+
+        </script>
+    </body>
+</html>

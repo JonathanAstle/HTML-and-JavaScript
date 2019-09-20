@@ -1,0 +1,38 @@
+<html>
+<body>
+
+    <p>Second page</p>
+
+    <!--<a href="secondpage.html">Click me for second page!</a>-->
+    <button onclick="handleClick()">Click me for first page! </button>
+    
+    <!-- Look in document.cookie in console and "name=Chris" will be there-->
+
+
+
+
+
+
+
+
+
+
+    <script>
+        const url = new URLSearchParams(location.search);
+        console.log(url.get("name"));
+
+        console.log(
+           localStorage.getItem("crap")
+        );
+        
+
+        function handleClick() {
+            location.href = "firstpage.html";
+        }
+    </script>
+
+
+
+
+</body>
+</html>
